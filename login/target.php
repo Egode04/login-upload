@@ -1,5 +1,32 @@
 <?php
 
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $db = "myData";
+
+// // Create connection
+// $conn = new mysqli($servername, $username, $password, $db);
+
+// // Check connection
+// if ($conn->connect_error) {
+//   echo ("Connection failed: " . $conn->connect_error);
+// } else {
+//     echo "Connected successfully";
+// } echo "<br>";
+
+// $sql = 'SELECT id, username, password, name, email FROM users';
+// $result = $conn->query($sql);
+
+// if ($result->num_rows > 0) {
+//     // output data of each row
+//     while ($row = $result->fetch_assoc()) {
+//         if ($row["username"] === $_POST["Username"] && $row["password"] === $_POST["Password"])
+//     }
+// } else {
+//     echo "0 results!";
+// }
+
 session_start();
 
 $_SESSION['logged in'] = false;

@@ -11,7 +11,7 @@ function logInfoToTextFile(string $filePath = "logs.txt", string $string) {
     }
 }
 
-if ($_SESSION['logged in']) {
+if ($_SESSION['logged in'] || $_SESSION['Logged in']) {
     $user = $_SESSION['user'];
 
     $target_dir = "uploads/";
