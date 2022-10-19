@@ -2,6 +2,9 @@
 
 session_start();
 
+if ($_SESSION['logged in'] = null) $_SESSION['logged in'] = false; 
+if ($_SESSION['Logged in'] = null) $_SESSION['Logged in'] = false; 
+
 function logInfoToTextFile(string $filePath = "logs.txt", string $string) {
     $path = fopen($filePath, 'r') or die("Unable to Open File!");
     if (flock($path, LOCK_EX)) {

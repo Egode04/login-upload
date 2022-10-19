@@ -51,3 +51,4 @@ Logged in as Genshin
 Failed to log in as Genshin
 Logged in as Emil
 Logged in as Egode
+Failed to log in as Egode
