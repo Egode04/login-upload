@@ -39,11 +39,13 @@ if ($result->num_rows > 0) {
 
     if ($_SESSION['Logged in']) {
         echo "Logged in! <br>";
+        header('Location: http://localhost/functions/upload/');
     } else {
         echo "Failed to loggin! <br>";
+        $_SESSION['failed'] = true;
+        header('Location: http://localhost/functions/sql/sql.html');
     }
 
-    header('Location: http://localhost/functions/upload/');
 } else {
     echo "0 results!";
 }

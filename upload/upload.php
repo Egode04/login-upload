@@ -74,4 +74,5 @@ if ($_SESSION['logged in'] || $_SESSION['Logged in']) {
     }
 } else {
     echo "You are not logged in!";
+    header('Location: http://localhost/functions/sql/sql.html');
 }
